@@ -1,6 +1,6 @@
 {
   "name": "config4u",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Environment, command line or JSON file with comments and single quotes",
   "main": "index.js",
   "scripts": {
