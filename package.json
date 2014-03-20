@@ -1,7 +1,7 @@
 {
   "name": "config4u",
   "version": "0.1.0",
-  "description": "environment, command line or json file with comments and single quotes config",
+  "description": "Environment, command line or JSON file with comments and single quotes",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R list test/*.js"
@@ -14,6 +14,9 @@
     "url": "https://github.com/angleman/config4u/issues"
   },
   "dependencies": {
+    "alce": "^1.0.0",
+    "xtend": "^2.1.2",
+    "minimist": "0.0.8"
   },
   "devDependencies": {
     "grunt": "^0.4.3",
