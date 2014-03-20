@@ -11,12 +11,11 @@ function Config4u(DEFAULT) {
 	var configDir         = process.cwd()
 	var configFile        = 'config.json'
 	var configSource      = configDir + '/' + configFile
-	var config            = (DEFAULT) ? DEFAULT : {}
+	var config            = (!!DEFAULT) ? DEFAULT : {}
 	var json              = ''
 	var parsed            = {}
 
 	function findConfig(configSource) {
-		configSource      = argv.config
 		var asDir         = argv.config + '/' + configFile
 		var asFile        = configDir   + '/' + argv.config
 		if (configSource.substr(0,1) == '/' && fs.existsSync(configSource)) {
